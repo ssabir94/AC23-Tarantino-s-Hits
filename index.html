@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarantino’s Hits</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="title">Tarantino’s Hits</h1>
+      <p class="subtitle">3 películas, 4 canciones y varios momentos que pasaron a la historia</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- VIDEO -->
+    <section class="card" id="video">
+      <h2>TEASER</h2>
+      <p class="muted">
+        Una pizca de mi creación...
+      </p>
+
+      <div class="video-wrap">
+        <video controls preload="metadata">
+          <source src="teaser.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta video.
+        </video>
+      </div>
+    </section>
+
+    <!-- DESCRIPCIÓN -->
+    <section class="card" id="descripcion">
+      <h2>Descripción del Proyecto</h2>
+
+      <p>
+        Este proyecto consiste en la creación de un vídeo montaje inspirado en el universo cinematográfico de Quentin Tarantino.
+        La idea principal ha sido reunir momentos icónicos de tres de sus películas más representativas —<em>Reservoir Dogs</em>,
+        <em>Pulp Fiction</em> y <em>Kill Bill</em>— y combinarlos en una única pieza que mantenga coherencia visual y musical.
+      </p>
+
+      <p>
+        El vídeo comienza con un fragmento de <em>Los Simpsons</em>, haciendo referencia al episodio de Rasca y Pica de
+        “Reservoir Cats”, como guiño creativo a <em>Reservoir Dogs</em>. Esta pequeña introducción aporta un toque más personal
+        y conecta el mundo del cine con la cultura popular, marcando desde el inicio el estilo dinámico del montaje.
+        Debo añadir que Tarantino, a la vez que algo bestia, tiene un especial sentido del humor(negro,tirando a  tizón...), así que me ha parecido
+        adecuado ponerlo como intro.
+      </p>
+
+      <p>
+        Uno de los aspectos más importantes del proyecto ha sido la banda sonora. Se ha querido dar especial protagonismo a
+        las canciones originales de cada película, ya que son temas muy reconocibles y pegadizos que forman parte de su identidad.
+        La música no solo acompaña a las imágenes, sino que marca el ritmo del montaje y diferencia claramente cada bloque del vídeo.
+      </p>
+
+      <p>
+        Además, el montaje no se limita únicamente a escenas originales de las películas. En el bloque de <em>Reservoir Dogs</em>,
+        se han añadido tres clips adicionales de muñecos bailando al ritmo de la canción, con el objetivo de practicar distintos
+        efectos visuales y aportar un contraste más creativo. Estos planos se combinan con escenas reales de la película para generar
+        mayor dinamismo y variedad visual.
+      </p>
+
+      <p>
+        En conjunto, el proyecto busca mantener la esencia del estilo de Tarantino —ritmo, música y escenas potentes— pero
+        incorporando también decisiones personales en la edición, tanto en el uso de efectos como en la forma de enlazar
+        las distintas películas.
+      </p>
+    </section>
+
+    <!-- ASPECTOS TÉCNICOS -->
+    <section class="card" id="tecnica">
+      <h2>Aspectos Técnicos</h2>
+
+      <h3>Software utilizado: Kdenlive</h3>
+      <p>
+        Para la edición del vídeo se ha utilizado <strong>Kdenlive</strong>, un editor de vídeo no lineal (NLE) y de código abierto.
+        Se considera “no lineal” porque permite montar el vídeo en una línea de tiempo moviendo libremente los clips, cortándolos,
+        reordenándolos y modificándolos sin afectar al archivo original. Es decir, el material se edita de forma flexible y se puede
+        deshacer o ajustar en cualquier momento.
+      </p>
+
+      <p>
+        El programa trabaja principalmente con una línea de tiempo por pistas, donde se pueden colocar varias capas de vídeo (V1, V2…)
+        y varias capas de audio (A1, A2…). Esto permite, por ejemplo, tener una pista para los clips principales, otra para fragmentos
+        añadidos o recursos extra, y pistas separadas para música y efectos de sonido. Gracias a esta organización, es más fácil controlar
+        qué se ve y qué se escucha en cada momento.
+      </p>
+
+      <p>
+        Kdenlive también incluye un sistema de transiciones y composiciones para enlazar escenas. En lugar de hacer cambios bruscos,
+        se pueden crear transiciones suaves (como disoluciones) o más marcadas (como Luma o desplazamientos). Estas transiciones se
+        controlan por duración y por parámetros como dirección o suavidad, lo que permite adaptarlas al ritmo del montaje.
+      </p>
+
+      <p>
+        En cuanto a los efectos, Kdenlive permite aplicar filtros tanto de vídeo como de audio directamente a los clips. Esto se usa
+        para modificar la imagen (por ejemplo, distorsiones, inversión de colores o reflejos) o para ajustar el sonido (volumen, fundidos, etc.).
+        Además, permite controlar algunos cambios de forma progresiva (por ejemplo, hacer que el volumen baje poco a poco antes de un cambio de canción).
+      </p>
+
+      <hr class="sep" />
+
+      <h3>Transiciones</h3>
+
+
+      <h4> 1. Luma — Intro a PULP FICTION</h4>
+      <p class="muted"><strong>Wipe Method:</strong> Bi-Linear X</p>
+      <p>
+        En esta parte del montaje se ha utilizado una transición de tipo Luma para pasar del plano de la galleta de jengibre al icónico baile de Pulp Fiction.
+        A diferencia de la disolución clásica, la transición Luma utiliza un patrón que hace que la nueva escena aparezca progresivamente siguiendo una forma determinada,
+        en lugar de mezclarse simplemente por opacidad.
+      </p>
+      <p>
+        He elegido esta transición porque el cambio no representa un salto temporal suave, sino un cambio de bloque más marcado dentro del vídeo.
+        El plano de la galleta tenía un ritmo más dinámico y humorístico, mientras que el baile introduce una escena más reconocible y con identidad propia.
+        La Luma permite que el paso sea más visual y llamativo, reforzando el cambio de energía y acompañando el ritmo de la música en ese momento.
+      </p>
+
+      <h4> 2. Deslizar (Slide) - PULP FICTION</h4>
+      <p>
+        En esta parte del montaje se ha utilizado la transición “Deslizar” para pasar de la escena del coche en la que los personajes están conversando
+        a la escena en la que el personaje de Travolta conduce rápidamente para intentar salvar la vida de Thurman.
+        Esta transición desplaza una escena mientras la siguiente entra en pantalla, generando una sensación de movimiento continuo.
+      </p>
+      <p>
+        He elegido este tipo de transición porque el cambio no es solo visual, sino también de intensidad. Se pasa de un momento más estático y dialogado
+        a una situación de urgencia y acción. El efecto de deslizamiento refuerza esa sensación de avance y dinamismo, acompañando el aumento de tensión
+        en la escena y el ritmo de la música en ese momento.
+      </p>
+
+      <h4> 3. Empujar izquierda (Push Left) - KILL BILL</h4>
+      <p>
+        Se ha utilizado la transición “Empujar izquierda” (Push Left) en el cambio entre el bloque de Pulp Fiction y el inicio de Kill Bill.
+        Esta transición desplaza lateralmente el clip anterior fuera de la pantalla mientras el nuevo clip entra desde el lado contrario,
+        generando un efecto de empuje continuo sin mezcla de opacidad entre escenas.
+      </p>
+      <p>
+        A nivel narrativo, esta decisión refuerza el cambio de etapa dentro del vídeo, marcando el paso de una estética noventera más urbana (Pulp Fiction)
+        a una estética más estilizada y violenta propia de Kill Bill. El movimiento lateral aporta dinamismo y sensación de avance, acompañando el cambio musical
+        y manteniendo la energía del montaje. De este modo, la transición no solo cumple una función técnica, sino también expresiva, ayudando a diferenciar
+        claramente ambos bloques cinematográficos dentro del proyecto.
+      </p>
+
+      <h4> 4. Disolver (Dissolve) — KILL BILL</h4>
+      <p>
+        En esta parte del vídeo he utilizado una transición de tipo Disolución (Dissolve) para pasar del momento en que disparan a Uma Thurman
+        a la escena en la que despierta con intención de venganza. Esta transición hace que una escena desaparezca poco a poco mientras la siguiente aparece,
+        en lugar de hacer un corte directo.
+      </p>
+      <p>
+        He elegido este tipo de transición porque el cambio entre escenas representa un salto en el tiempo y un cambio en el estado del personaje.
+        Al usar una disolución, el paso resulta más suave y ayuda a transmitir esa transición entre el momento del disparo y el inicio de su recuperación,
+        sin que el cambio sea brusco.
+      </p>
+
+
+
+      <hr class="sep" />
+
+      <h3>Efectos visuales</h3>
+
+      <h4>1. Ondulación de ventanilla</h4>
+      <p>
+        Se ha aplicado el efecto Ondulación de ventanilla para generar una ligera distorsión en la imagen, creando una sensación de movimiento o inestabilidad visual.
+        Este efecto modifica la forma de la imagen como si estuviera vista a través de una superficie ondulada.
+      </p>
+      <p>
+        Se ha utilizado en momentos concretos para aportar dinamismo y reforzar el ritmo del montaje, evitando que los planos resulten demasiado estáticos.
+      </p>
+
+      <h4>2. Vértigo</h4>
+      <p>
+        El efecto Vértigo produce una deformación de la imagen que simula una sensación de mareo o tensión visual. Técnicamente altera la perspectiva del plano,
+        generando una ligera distorsión que centra la atención en el personaje.
+      </p>
+      <p>
+        Se ha aplicado para intensificar determinados momentos y reforzar la carga emocional de la escena.
+      </p>
+
+      <h4>3. Reflejar</h4>
+      <p>
+        El efecto Reflejar invierte la imagen horizontalmente, como si estuviera vista en un espejo.
+      </p>
+      <p>
+        Se ha utilizado para aportar variedad visual y romper la continuidad de forma intencionada, dando un toque más dinámico al montaje.
+      </p>
+
+      <h4>4. Invertir</h4>
+      <p>
+        El efecto Invertir cambia los colores originales del plano por sus valores opuestos, generando un resultado visual más llamativo y contrastado.
+      </p>
+      <p>
+        Se ha aplicado en momentos concretos para crear un efecto más impactante y diferenciar visualmente ese fragmento del resto del vídeo.
+      </p>
+
+      <h4>5. Fundido saliente</h4>
+      <p>
+        El Fundido saliente reduce progresivamente la visibilidad del plano hasta llegar a negro. Técnicamente disminuye la opacidad de la imagen de forma gradual.
+      </p>
+      <p>
+        Se ha utilizado para cerrar escenas o bloques del vídeo de manera suave, evitando cortes bruscos.
+      </p>
+
+      <h4>6. Fundido entrante</h4>
+      <p>
+        El Fundido entrante hace que la imagen aparezca progresivamente desde negro hasta mostrarse completamente.
+      </p>
+      <p>
+        Se ha aplicado al inicio de algunos bloques para introducir la escena de forma más suave y coherente con el ritmo general.
+      </p>
+
+      <h4>7. Nervioso</h4>
+      <p>
+        El efecto Nervioso genera pequeñas variaciones rápidas en la imagen, creando una sensación de vibración o inestabilidad.
+      </p>
+      <p>
+        Se ha aplicado en la escena en la que inyectan adrenalina a Mia Wallace para reforzar la tensión y transmitir visualmente el momento crítico y caótico de la situación.
+      </p>
+
+      <hr class="sep" />
+
+      <h3>Banda sonora del proyecto</h3>
+      <p>
+        La banda sonora del vídeo está compuesta por cuatro canciones originales asociadas a las películas utilizadas en el montaje:
+      </p>
+      <ul>
+        <li><strong>Little Green Bag</strong> – George Baker (<em>Reservoir Dogs</em>)</li>
+        <li><strong>Misirlou</strong> – Dick Dale (<em>Pulp Fiction</em>)</li>
+        <li><strong>Bang Bang (My Baby Shot Me Down)</strong> – Nancy Sinatra (<em>Kill Bill Vol. 1</em>)</li>
+        <li><strong>The Lonely Shepherd</strong> – Gheorghe Zamfir (<em>Kill Bill</em>)</li>
+      </ul>
+
+      <p>
+        La elección de estas canciones no es aleatoria, sino que responde a la intención de mantener coherencia temática entre la imagen y el sonido.
+        Cada canción está directamente relacionada con el universo cinematográfico de Quentin Tarantino y ayuda a identificar rápidamente cada bloque del vídeo.
+      </p>
+
+      <p>
+        <strong>Little Green Bag</strong> se ha utilizado para acompañar el inicio más rítmico y dinámico del montaje, ya que transmite una energía constante
+        y reconocible que encaja con el estilo de <em>Reservoir Dogs</em>.
+      </p>
+      <p>
+        <strong>Misirlou</strong> aporta un ritmo más acelerado y llamativo, reforzando las escenas más icónicas de <em>Pulp Fiction</em> y aumentando
+        la intensidad visual del montaje.
+      </p>
+      <p>
+        <strong>Bang Bang</strong> introduce un tono más pausado y emocional, que encaja con el momento dramático de <em>Kill Bill</em>, especialmente
+        en las escenas relacionadas con el personaje de Uma Thurman.
+      </p>
+      <p>
+        Por último, <strong>The Lonely Shepherd</strong> aporta un carácter más épico y reflexivo, reforzando la sensación de transformación y venganza del personaje.
+      </p>
+
+      <p>
+        A nivel técnico, los cambios de canción se han realizado utilizando fundidos de entrada y salida, así como efectos de sonido (disparo y explosión)
+        para reforzar las transiciones entre bloques y evitar cortes bruscos. De este modo, la música no solo acompaña las imágenes, sino que estructura
+        el montaje y marca los cambios de ritmo dentro del vídeo.
+      </p>
+
+      <hr class="sep" />
+
+      <h3>Exportación</h3>
+      <p>
+        El vídeo final se ha exportado en formato <strong>MP4</strong> con resolución <strong>1920×1080 (1080p)</strong> y <strong>25 fps</strong>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&COPY;Made By Sana - 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

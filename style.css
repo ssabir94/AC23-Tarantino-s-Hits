@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    background-color: #f6d54a; /* amarillo pastel */
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: black;
+}
+
+
+/* LINKS */
+a{
+    color: black;
+    text-decoration: underline;
+}
+a:hover{
+    color: #a40000; /* rojo sangre */
+}
+
+/* HEADER */
+header{
+    background-color: black;
+    color: #f6d54a;
+    text-align: center;
+    padding: 65px 20px 55px 20px;
+    border-bottom: 7px solid #a40000;
+    position: relative;
+    box-shadow: 0 8px 0 rgba(0,0,0,0.35);
+}
+
+.subtitle{
+    font-style: italic;
+}
+
+
+/* “Gota” de sangre (decoración) */
+header::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -32px;
+    width: 20px;
+    height: 26px;
+    background: radial-gradient(circle at 30% 30%, #d10000, #7a0000);
+    border-radius: 50% 50% 60% 60%;
+}
+
+
+/* título estilo cartel */
+header h1{
+    font-family: 'Cinzel', serif;
+    font-size: 52px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+
+    /* contorno (si el navegador lo soporta) */
+    -webkit-text-stroke: 2px #f6d54a;
+    color: transparent;
+
+    /* fallback si no soporta stroke */
+    text-shadow:
+        2px 0 0 #f6d54a,
+        -2px 0 0 #f6d54a,
+        0 2px 0 #f6d54a,
+        0 -2px 0 #f6d54a;
+}
+
+header p{
+    margin: 18px auto 0 auto;
+    max-width: 780px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* CONTENIDO */
+main{
+    width: 82%;
+    max-width: 980px;
+    margin: 55px auto;
+}
+
+/* SECCIONES */
+section{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 4px solid black;
+    position: relative;
+
+    /* sombra “poster” */
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.35);
+}
+
+/* franja roja lateral */
+section::before{
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #a40000;
+}
+
+/* títulos */
+h2{
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #a40000;
+}
+
+h3{
+    margin-top: 28px;
+    color: #a40000;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h4{
+    margin-top: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* párrafos */
+p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* listas */
+ul{
+    padding-left: 20px;
+}
+li{
+    margin: 6px 0;
+}
+
+/* SEPARADORES */
+hr{
+    border: none;
+    border-top: 2px solid black;
+    margin: 30px 0;
+}
+
+/* VIDEO */
+video{
+    width: 100%;
+    border: 4px solid black;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.35);
+}
+.muted{
+    color: #444;
+    font-style: italic;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: black;
+    color: #f6d54a;
+    text-align: center;
+    padding: 28px 20px;
+    border-top: 7px solid #a40000;
+    box-shadow: 0 -8px 0 rgba(0,0,0,0.35);
+}
+
+/* PEQUEÑOS AJUSTES PARA MÓVIL */
+@media (max-width: 700px){
+    main{
+        width: 92%;
+        margin: 40px auto;
+    }
+
+    header h1{
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+
+    section{
+        padding: 22px;
+        box-shadow: 7px 7px 0 rgba(0,0,0,0.35);
+    }
+
+    video{
+        box-shadow: 6px 6px 0 rgba(0,0,0,0.35);
+    }
+}
